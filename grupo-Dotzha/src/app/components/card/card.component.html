@@ -1,0 +1,10 @@
+<!-- <p>card works!</p> -->
+<img width="100" [src]="companyIn.imgCompany" *ngIf="companyIn.imgCompany; else DefaultImg" alt="Company Image">
+<ng-template #DefaultImg>
+  <img width="200" [src]="imgCompanyDefault" alt="Company Image Default">
+</ng-template>
+<h1> {{companyIn.nameCompany}}</h1>
+<p>{{companyIn.descriptionCompany}}</p>
+<a>{{companyIn.pinCompany}}</a>
+<button type="button">Whatsapp</button>
+<br>

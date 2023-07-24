@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+// *{ font-family: Montserrat;}
+
+:root{
+  --mateBlack:#000000;
+  --mateWhite:#FFFFFF;
+
+  --darkBlueMarine0:#04040C;
+  --darkBlueMarine1:#0C1E2F;
+  --blueMarine: #0C2C44;
+  --deepPurple: #0C2C44;
+  --darkPurple0: #374566;
+  --darkpurple1: #635F87;
+  --purple:#9479A6;
+  --warmPurple: #C794C0;
+  --softBluePurple: #94AECC;
+  --cyan: #C38400;
+  --warmCyan0: #E29E21;
+  --warmCyan1:#FFC148;
+  --warmBrown: #D36404;
+  --darkBronw: #703404;
+  --deepBrown: #44240c;
+  --brown: #944604;
+  --warmOrange: #FC5C24;
+  --softOrange: #FF8E52;
+
+  --polarWhite: #F0F8FB;
+  --polarWhite1: #D7F3FF;
+
+}
+// *{
+//   // font-family: Montserrat;
+//   // font-weight: 300;
+// }
+
+html, body { height: 100%; }
+body { margin: 0; font-size: 62.5%; font-family:Montserrat,  Roboto, "Helvetica Neue", sans-serif; }
