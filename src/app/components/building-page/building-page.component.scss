@@ -12,7 +12,7 @@
   // height: 100%;
   // display: flex;
   min-width: 375px;
-  max-height: 846px;
+  max-height: 660px;
   // background: linear-gradient(150deg, var(--darkPurple0)35%,var(--warmOrange));
   // background: linear-gradient(225deg, rgba(55,69,102,1) 0%, rgba(255,142,82,1) 32%, rgba(148,174,204,1) 70%, rgba(252,92,36,1) 100%);
   // background: linear-gradient(225deg, rgba(55,69,102,1) 0%, rgba(255,142,82,1) 44%, rgba(148,174,204,1) 60%, rgba(252,92,36,1) 100%);
@@ -41,7 +41,7 @@
 h1{
   font-weight: 400;
   font-size: 2.5rem;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 20px;
   margin: 10px;
   // align-self: flex-end;
@@ -49,7 +49,7 @@ h1{
 h2{
   font-weight: 100;
   margin: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 h3{
   margin: 10px;
@@ -127,7 +127,7 @@ mat-progress-bar{
   .nav--building{
     grid-area: a;
     // height: calc(100vh - 10px);
-    padding: 30px;
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
