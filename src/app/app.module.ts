@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { routing } from './app.routing';
+// import { routing } from './app.routing';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule  } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ImgComponent } from './components/img/img.component';
 import { CardComponent } from './components/card/card.component';
@@ -28,7 +28,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
   ],
   imports: [
     BrowserModule,
-    routing,
+    // routing,
     AppRoutingModule,
     BrowserAnimationsModule,
     /* */
