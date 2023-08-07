@@ -9,7 +9,7 @@ import { BuildingPageComponent } from "./components/building-page/building-page.
 // const pathmatch: PathMatch = 'full'
 const routes: Routes = [
   { path: '', component: BuildingPageComponent},
-  { path: 'defaulter', component: DefaulterComponent},
+  { path: 'marttell/defaulter', component: DefaulterComponent},
   // { path: '', redirectTo: "/defaulter", pathMatch: pathmatch},
   { path: '**', component: PageNotFoundComponent}
 ];
