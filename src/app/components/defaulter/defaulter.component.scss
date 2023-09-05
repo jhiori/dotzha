@@ -25,6 +25,7 @@
     justify-content: center;
     
     height: 100%;
+    // min-height: 500px;
   }
 
 .header{
@@ -108,4 +109,11 @@ mat-progress-bar{
   font-weight: 300;
   font-style: italic;
   font-size: .8rem;
+}
+
+@media (min-height: 600px){
+
+  .body--defaulter{
+      height: 100vh;
+  }
 }
