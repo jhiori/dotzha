@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>Grupo Dotzha</title>
-  <base href="/">
+  <base href="/docs/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="./assets/images/building-maintenance/favicon.png"> -->
   <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/pw/AIL4fc_XCAqOz2pRYpWQuACMvc_XoMQBVfSKyX4j4x8Ye2Bv6j4QQxBGCDDpmKXMZ9tMxR3B5Ncf_I2DYVVKpGl3VmJfnIhmR2dTPiYTB2PLeGWPZBNo-bE=s32-p-k">
