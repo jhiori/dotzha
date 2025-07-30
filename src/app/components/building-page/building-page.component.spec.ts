@@ -6,10 +6,12 @@ describe('BuildingPageComponent', () => {
   let component: BuildingPageComponent;
   let fixture: ComponentFixture<BuildingPageComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [BuildingPageComponent]
-    });
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [BuildingPageComponent]
+    })
+    .compileComponents();
+
     fixture = TestBed.createComponent(BuildingPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
