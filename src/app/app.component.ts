@@ -5,7 +5,8 @@ import { BuildingPageComponent } from "./components/building-page/building-page.
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, BuildingPageComponent],
+  imports: [//RouterOutlet, 
+    BuildingPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

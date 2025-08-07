@@ -1,0 +1,36 @@
+.seccionCardsCo{
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10px;
+    justify-content: center; /* Centers content horizontally */
+    // align-content: center;
+    // place-content: center; 
+    
+}
+
+.example-card {
+    min-width: 250px;
+    max-width: 300px;
+    max-height: 360px;
+    margin: auto;
+    color: black;
+    justify-content: center;
+}
+
+.mat-mdc-card-image{
+    max-width: 250px;
+    max-height: 200px;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.mat-mdc-card-actions{
+    padding: 5px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
