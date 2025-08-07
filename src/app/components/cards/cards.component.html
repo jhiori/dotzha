@@ -3,12 +3,12 @@
     
     <mat-card class="example-card" appearance="outlined" *ngFor="let co of companies()">
     <mat-card-header>
-        <img mat-card-avatar src="{{co.avatar_co}}" alt="Company Avatar">
+        <img mat-card-avatar src="{{co.avatar_co}}" alt="{{co.subName_co}} Avatar">
         <!-- <div mat-card-avatar class="example-header-image"></div> -->
         <mat-card-title>{{co.subName_co}}</mat-card-title>
         <mat-card-subtitle>{{co.slogan_co}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="{{co.imgUrl_co}}" alt="Company Photo">
+    <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
     <mat-card-content>
         <p> {{co.desc_co}}
         </p>

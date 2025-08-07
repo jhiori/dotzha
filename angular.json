@@ -40,7 +40,7 @@
             "outputMode": "server",
             "ssr": {
               "entry": "src/server.ts"
-            }
+            } 
           },
           "configurations": {
             "production": {
@@ -76,6 +76,7 @@
               "buildTarget": "dotzha:build:development"
             }
           },
+          
           "defaultConfiguration": "development"
         },
         "extract-i18n": {

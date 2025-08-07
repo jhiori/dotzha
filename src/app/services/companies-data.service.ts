@@ -9,7 +9,7 @@ import { DataCo } from '../interfaces/companies.interface';
 })
 export class CompaniesDataService {
   private dataFileCo = DataRawPathJsonFile.DATA_FILE_CO
-
+  
   constructor(private http: HttpClient) { }
 
   getCompanies(): Observable<any[]>{
