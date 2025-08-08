@@ -5,6 +5,7 @@ import { CompaniesDataService } from '../../services/companies-data.service';
 import { DataCo } from '../../interfaces/companies.interface';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-cards',
@@ -13,7 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.scss'

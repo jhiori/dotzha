@@ -61,3 +61,7 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-size: 62.5%; font-family:Montserrat,  Roboto, "Helvetica Neue", sans-serif; }
+
+.matDivider{/*Lineas divisoras angular material*/
+  border-top-color: var(--purpleM) !important;
+}

@@ -1,18 +1,21 @@
 <!-- <p>cards works!</p> -->
  <div class="seccionCardsCo">
     
-    <mat-card class="example-card" appearance="outlined" *ngFor="let co of companies()">
+    <mat-card class="example-card shadow" appearance="outlined" *ngFor="let co of companies()">
     <mat-card-header>
         <img mat-card-avatar src="{{co.avatar_co}}" alt="{{co.subName_co}} Avatar">
         <!-- <div mat-card-avatar class="example-header-image"></div> -->
         <mat-card-title>{{co.subName_co}}</mat-card-title>
         <mat-card-subtitle>{{co.slogan_co}}</mat-card-subtitle>
+        
     </mat-card-header>
+    <mat-divider class="matDivider"/>
     <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
     <mat-card-content>
         <p> {{co.desc_co}}
         </p>
     </mat-card-content>
+    <mat-divider class="matDivider"/>
     <mat-card-actions align="end">
         <button matButton mat-raised-button (click)="redirect(co.redirect)">
             <mat-icon>link</mat-icon>Ir
