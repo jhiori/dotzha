@@ -43,3 +43,9 @@
   background-size: cover;
 }
 
+@media only screen and (max-width: 600px) {
+  .seccionCardsCo{
+    display: grid; 
+    grid-template-columns: repeat(1,1fr);
+  }
+}
