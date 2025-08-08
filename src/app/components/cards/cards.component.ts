@@ -30,7 +30,7 @@ export class CardsComponent {
     console.log('Entra cuando se llama componente')
     this.dataCo_.getCompanies().subscribe(resp => {      
       this.companies.set(resp)
-      // console.log('companies',this.companies)
+      //console.log('companies',this.companies)
     })
 
   }
