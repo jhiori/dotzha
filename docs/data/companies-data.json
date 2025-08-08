@@ -11,19 +11,38 @@
         "name_co": "Tatis",
         "subName_co": "Tatis",
         "slogan_co": "Sabor desde el corazón",
-        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczP6biLDSiqmfqf37a36dTwcO258CowsqY_S2tNW3oFGHFfpYui7sD-FWZxBT4f8y1eRN7nov6juHS4ebuwl61OHBnpy6QpAKfQZMzdsWIgTXyk0HWrl=w2400",
-        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczP6biLDSiqmfqf37a36dTwcO258CowsqY_S2tNW3oFGHFfpYui7sD-FWZxBT4f8y1eRN7nov6juHS4ebuwl61OHBnpy6QpAKfQZMzdsWIgTXyk0HWrl=w2400",
+        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczMoZVvR9DKyl42SBhzPbr5oVlZsTBJNGGZulOO2p_hCXVu7oP3aZMXMP0gTVjYdtW4gfofjb0NIn0yz4xANQOxPdqw8Td_rG5ZoJDIXg42HCGzhsUoQ=w2400",
+        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMXL-zvVBlJfvQeNWissb3fiwfpQeAWnRpJV6-k7Bpxz1ye8smAGRyXwQMdTnogO0I_zLTDIG7qLdCBZYWPn-l8Md1eLhhOncHvYOz9Sudifr3TWjsz=w2400",
         "desc_co": "Helados elaborados con los mejores ingredientes, ideados para enamorarte desde el primer instante. Calidad, sabor y pasión en cada bocado",
         "redirect":"https://www.tiktok.com/@tatis_paleteria?_t=ZS-8ygXLsHRifn&_r=1"
     },
     {
         "name_co": "Mi Quesito",
-        "subName_co": "Artesanal",
-        "slogan_co": "Hecho con tradición y sabor auténtico",
-        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczM6i2_Pkw4Ocs-aLsuRSVpUUQ5pK1j1FdYMLg5huabuuWITuQlyNh2CG_AGtQ4tor0UAq5U8iSGxbNlLGyPi6HgadfebCp_B_gq3jsV-aeF7TZJidP-=w2400",
-        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczM6i2_Pkw4Ocs-aLsuRSVpUUQ5pK1j1FdYMLg5huabuuWITuQlyNh2CG_AGtQ4tor0UAq5U8iSGxbNlLGyPi6HgadfebCp_B_gq3jsV-aeF7TZJidP-=w2400",
+        "subName_co": "Mi Quesito",
+        "slogan_co": "Artesanal",
+        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczPeUQ4TVlxoCHLkeb7zRGFc6P_By6qiZ51FKzFT_9Fswdt9ccxUF9_kJ2yJMwOCPaBwfgntAPFK9ezwpEehgVwoShK-fiQY7ecCY8vQ0ezMhU0z2YZ1=w2400",
+        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMmOXfnye8PbF-GBpleMTWUdQkXrTkQdDyeRH19U4jgdhbxF00ciRevZdDvkYgeSOP-r0lLqGgJfc9tdZ6Nhuhyeb6xtqr_H8taCgKjxlZ4D9I7v5C7=w2400",
         "desc_co": "Queso artesanal, hecho con tradición y sabor auténtico. Una delicia que tienes que probar.",
         "redirect":""
+    },  
+    {
+        "name_co": "Marttell",
+        "subName_co": "Marttell",
+        "slogan_co": "Soluciones Integrales TI",
+        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczOQHNnJD-OhOxd-KQCIS_5pBTPFQS_IQ9p-gASLW61e5ueGZdvOxvw0CyTqSe8fPwsOcani01BhsB2Zzxskcf45iDx6oYFtJyxg7GFpGKKxeq8RwGXW=w2400",
+        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMCw7ESmhLL8CUEtkX5g01M6uUTJwX319cgpOHfzWM35TX8M3bs6xrBnKuRnIVF_9HC8MbkHsBsQNdQL_IAsAcY8qw9OPcbj9BvsjJ7ZW5bpe0l0gml=w2400",
+        "desc_co": "Ofrecemos soluciones tecnológicas integrales en TI para optimizar procesos, impulsar la innovación y potenciar el crecimiento de tu empresa.",
+        "redirect":""
+    }  ,
+    {
+        "name_co": "Dotzha Ebanisteria",
+        "subName_co": "Dotzha Ebanisteria",
+        "slogan_co": "Calidad y elegancia",
+        "avatar_co": "https://lh3.googleusercontent.com/pw/aAP1GczOQHNnJD-OhOxd-KQCIS_5pBTPFQS_IQ9p-gASLW61e5ueGZdvOxvw0CyTqSe8fPwsOcani01BhsB2Zzxskcf45iDx6oYFtJyxg7GFpGKKxeq8RwGXW=w2400",
+        "imgUrl_co": "https://lh3.googleusercontent.com/pw/aAP1GczMCw7ESmhLL8CUEtkX5g01M6uUTJwX319cgpOHfzWM35TX8M3bs6xrBnKuRnIVF_9HC8MbkHsBsQNdQL_IAsAcY8qw9OPcbj9BvsjJ7ZW5bpe0l0gml=w2400",
+        "desc_co": "Diseño y fabricación de muebles de madera. Diseños especiales y de linea",
+        "redirect":""
     }
+    
 ]
 
