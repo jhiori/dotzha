@@ -33,6 +33,7 @@ export class BuildingPageComponent {
   
   constructor( private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer ) {  
     this.matIconRegistry.addSvgIcon('dotzha-name',
-      this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/dotzha_Name.svg')); 
+      // this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_lg_wp.svg')); 
+      this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_wp.svg')); 
   }
 }
