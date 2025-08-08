@@ -16,8 +16,12 @@
     </mat-card-content>
     <mat-divider class="matDivider"/>
     <mat-card-actions align="end">
-        <button matButton mat-raised-button (click)="redirect(co.redirect)">
-            <mat-icon>link</mat-icon>Ver
+        <button matButton mat-mini-fab (click)="redirect(co.redirect)">
+            <mat-icon>play_arrow</mat-icon>
+            <!-- <a>{{co.redirect}}</a> -->
+        </button>&nbsp;
+        <button matButton mat-mini-fab (click)="redirect(co.redirect)">
+            <mat-icon>share</mat-icon>
             <!-- <a>{{co.redirect}}</a> -->
         </button>
         <!-- <button matButton>SHARE</button> -->

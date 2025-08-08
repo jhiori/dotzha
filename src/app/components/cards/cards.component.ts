@@ -37,7 +37,7 @@ export class CardsComponent {
 
   redirect(url?:string){
     console.log('Amonos fuera')
-    window.open(url,'_self')
+    window.open(url,'_blank')
   }
 
 }
