@@ -10,6 +10,12 @@
 //   src: url(https://example.com/material-symbols.woff) format('woff');
 // }
 
+// @import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+// @import 'bootstrap/scss/bootstrap';
+
+
 :root{
   --mateBlack:#000000;
   --mateWhite:#FFFFFF;
@@ -65,3 +71,4 @@ body { margin: 0; font-size: 62.5%; font-family:Montserrat,  Roboto, "Helvetica 
 .matDivider{/*Lineas divisoras angular material*/
   border-top-color: var(--purpleM) !important;
 }
+

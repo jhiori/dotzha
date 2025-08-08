@@ -6,6 +6,7 @@ import { DataCo } from '../../interfaces/companies.interface';
 import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+// import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap'
 
 @Component({
   selector: 'app-cards',
@@ -15,7 +16,9 @@ import { MatDividerModule } from '@angular/material/divider';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    // NgbModule
+    // NgbCarouselModule,
   ],
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.scss'

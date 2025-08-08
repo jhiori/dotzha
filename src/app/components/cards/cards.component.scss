@@ -12,13 +12,15 @@
 .example-card {
     // padding: 5px;
     min-width: 250px;
-    max-width: 300px;
+    max-width: 320px;
     // min-height: 350px;
     // max-height: 370px;
     height: 380px;
     margin: auto;
     color: black;
     justify-content: center;
+    font-size: .75rem;
+    
     // border-radius: 30px;
     // background-color: var(--polarWhite); // #FFCCCC;// ; #5C0017
     // opacity: .9;
@@ -30,7 +32,7 @@
 .mat-mdc-card-image{
     max-width: 250px;
     max-height: 200px;
-    padding: 10px;
+    padding: 5px;
     margin: auto;
     
 }
@@ -40,10 +42,10 @@
     
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
-  background-size: cover;
-}
+// .example-header-image {
+//   background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+//   background-size: cover;
+// }
 
 .glass-element {
   background-color: rgba(255, 255, 255, 0.1);
@@ -63,6 +65,13 @@
     min-height: 200px;
     align-content: center;
 }
+
+// .carousel-wrapper{
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+//   position: relative;
+// }
 
 @media only screen and (max-width: 600px) {
   .seccionCardsCo{

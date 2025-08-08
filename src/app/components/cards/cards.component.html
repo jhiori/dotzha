@@ -1,32 +1,60 @@
 <!-- <p>cards works!</p> -->
- <div class="seccionCardsCo">
-    
-    <mat-card class="example-card shadow glass-element" appearance="outlined" *ngFor="let co of companies()" (click)="redirect(co.redirect)">
-    <mat-card-header>
-        <img mat-card-avatar src="{{co.avatar_co}}" alt="{{co.subName_co}} Avatar">
-        <!-- <div mat-card-avatar class="example-header-image"></div> -->
-        <mat-card-title>{{co.subName_co}}</mat-card-title>
-        <mat-card-subtitle>{{co.slogan_co}}</mat-card-subtitle>        
-    </mat-card-header>
-    <mat-divider class="matDivider"/>
-    <a href="{{co.redirect}}" class="section_img">
-        <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
-    </a>
-    <mat-card-content>
-        <p> {{co.desc_co}}
-        </p>
-    </mat-card-content>
-    <mat-divider class="matDivider"/>
-    <mat-card-actions align="end">
-        <button matButton mat-mini-fab (click)="redirect(co.redirect)">
-            <mat-icon>play_arrow</mat-icon>
-            <!-- <a>{{co.redirect}}</a> -->
-        </button>&nbsp;
-        <button matButton mat-mini-fab >
-            <mat-icon>share</mat-icon>
-            <!-- <a>{{co.redirect}}</a> -->
-        </button>
-        <!-- <button matButton>SHARE</button> -->
-    </mat-card-actions>
-    </mat-card>
- </div>
+ <!-- div para 4 cards en pantalla -->
+ <!-- <div class="seccionCardsCo">     -->
+<div id="carouselExample" class="carousel slide">                       
+            <!-- <div *ngFor="let co of companies(); let isFirst = first"> -->
+        <!-- <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" (data-bs-slide-to)="co.name_co" aria-label="Slide 2"></button>
+        </div> -->
+    <div class="carousel-inner">   
+        @for (co of companies(); track co; let isFirst = $first) {        
+            <!-- @if(isFirst){ -->
+            <div class="carousel-item {{isFirst?'active':''}}">                  
+                <!-- <img src="{{co.imgUrl_co}}" width="300px" alt="{{co.name_co}}"/> -->
+                <mat-card class="example-card shadow glass-element" appearance="outlined" (click)="redirect(co.redirect)">            
+                    <mat-card-header>
+                        <img mat-card-avatar src="{{co.avatar_co}}" alt="{{co.subName_co}} Avatar"> 
+                        <mat-card-title>{{co.subName_co}}</mat-card-title>
+                        <mat-card-subtitle>{{co.slogan_co}}</mat-card-subtitle>        
+                    </mat-card-header>
+                    <mat-divider class="matDivider"/>
+                    <a href="{{co.redirect}}" class="section_img">
+                        <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
+                    </a>
+                    <mat-card-content>
+                        <p> {{co.desc_co}}
+                        </p>
+                    </mat-card-content>
+                    <mat-divider class="matDivider"/>
+                    <mat-card-actions align="end">
+                        <button matButton mat-mini-fab (click)="redirect(co.redirect)">
+                            <mat-icon>play_arrow</mat-icon> 
+                        </button>&nbsp;
+                        <button matButton mat-mini-fab >
+                            <mat-icon>share</mat-icon> 
+                        </button> 
+                    </mat-card-actions>            
+                </mat-card>
+            </div>  
+            <!-- }@else{
+            <div class="carousel-item">                  
+                <img src="{{co.imgUrl_co}}" width="300px" alt="{{co.name_co}}"/>
+            </div>  
+            } -->
+        
+        } 
+    </div>                  
+            <!-- </div>     -->   
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div> 
+
+<!--  -->
+    <!-- <mat-card class="example-card shadow glass-element" appearance="outlined" *ngFor="let co of companies()" (click)="redirect(co.redirect)"> -->
+<!-- </div> -->
