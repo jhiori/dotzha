@@ -59,6 +59,11 @@
   backdrop-filter: blur(10px); /* Apply blur effect on hover */
 }
 
+.section_img{
+    min-height: 200px;
+    align-content: center;
+}
+
 @media only screen and (max-width: 600px) {
   .seccionCardsCo{
     display: grid; 

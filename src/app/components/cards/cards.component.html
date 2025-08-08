@@ -9,7 +9,9 @@
         <mat-card-subtitle>{{co.slogan_co}}</mat-card-subtitle>        
     </mat-card-header>
     <mat-divider class="matDivider"/>
-    <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
+    <a href="{{co.redirect}}" class="section_img">
+        <img mat-card-image src="{{co.imgUrl_co}}" alt="{{co.subName_co}} Photo">
+    </a>
     <mat-card-content>
         <p> {{co.desc_co}}
         </p>
@@ -20,7 +22,7 @@
             <mat-icon>play_arrow</mat-icon>
             <!-- <a>{{co.redirect}}</a> -->
         </button>&nbsp;
-        <button matButton mat-mini-fab (click)="redirect(co.redirect)">
+        <button matButton mat-mini-fab >
             <mat-icon>share</mat-icon>
             <!-- <a>{{co.redirect}}</a> -->
         </button>
