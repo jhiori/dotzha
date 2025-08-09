@@ -15,6 +15,15 @@
         "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMXL-zvVBlJfvQeNWissb3fiwfpQeAWnRpJV6-k7Bpxz1ye8smAGRyXwQMdTnogO0I_zLTDIG7qLdCBZYWPn-l8Md1eLhhOncHvYOz9Sudifr3TWjsz=w2400",
         "desc_co": "Helados elaborados con los mejores ingredientes, ideados para enamorarte desde el primer instante. Calidad, sabor y pasión en cada bocado",
         "redirect":"https://www.tiktok.com/@tatis_paleteria?_t=ZS-8ygXLsHRifn&_r=1"
+    },    
+    {
+        "name_co": "Dotzha Ebanisteria",
+        "subName_co": "Dotzha Ebanisteria",
+        "slogan_co": "Calidad y elegancia",
+        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczNTxAGCc_ZVYBuT1200L8C5e03TcFutcDDetJS3QrXxV6UHxgEDfQhUpv6uMYtpFtFTcxiTWSszi-TcsyJmpXFlplY_PfA7Qp5-2U9oIp6HwLYzBPNR=w2400",
+        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMVShoD6bO3P9SS1tLFOsbCR7zFrWkpMKDijyTBQMuBqu0xm1jYiGtKVXhsFK6vZ7Fww4qka-YuQmiOWZYVz17V3vSwNrrC0-06zOAjLNoPlacQN1ya=w2400",
+        "desc_co": "Diseño y fabricación de muebles de madera. Diseños especiales y de linea",
+        "redirect":"https://www.youtube.com/channel/UCfngC4FK7KXZvJIOMCCxxew?sub_confirmation=1"
     },
     {
         "name_co": "Mi Quesito",
@@ -32,15 +41,6 @@
         "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczOQHNnJD-OhOxd-KQCIS_5pBTPFQS_IQ9p-gASLW61e5ueGZdvOxvw0CyTqSe8fPwsOcani01BhsB2Zzxskcf45iDx6oYFtJyxg7GFpGKKxeq8RwGXW=w2400",
         "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMCw7ESmhLL8CUEtkX5g01M6uUTJwX319cgpOHfzWM35TX8M3bs6xrBnKuRnIVF_9HC8MbkHsBsQNdQL_IAsAcY8qw9OPcbj9BvsjJ7ZW5bpe0l0gml=w2400",
         "desc_co": "Ofrecemos soluciones tecnológicas integrales en TI para optimizar procesos, impulsar la innovación y potenciar el crecimiento de tu empresa.",
-        "redirect":""
-    }  ,
-    {
-        "name_co": "Dotzha Ebanisteria",
-        "subName_co": "Dotzha Ebanisteria",
-        "slogan_co": "Calidad y elegancia",
-        "avatar_co": "https://lh3.googleusercontent.com/pw/AP1GczNTxAGCc_ZVYBuT1200L8C5e03TcFutcDDetJS3QrXxV6UHxgEDfQhUpv6uMYtpFtFTcxiTWSszi-TcsyJmpXFlplY_PfA7Qp5-2U9oIp6HwLYzBPNR=w2400",
-        "imgUrl_co": "https://lh3.googleusercontent.com/pw/AP1GczMVShoD6bO3P9SS1tLFOsbCR7zFrWkpMKDijyTBQMuBqu0xm1jYiGtKVXhsFK6vZ7Fww4qka-YuQmiOWZYVz17V3vSwNrrC0-06zOAjLNoPlacQN1ya=w2400",
-        "desc_co": "Diseño y fabricación de muebles de madera. Diseños especiales y de linea",
         "redirect":""
     }
     
