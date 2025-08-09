@@ -86,7 +86,7 @@ Thumbs.db
 
 # Scalable Vector Graphics
 #*.svg
-*.svgz
+# *.svgz
 
 # Portable Document Format
 *.pdf
