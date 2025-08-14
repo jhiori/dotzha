@@ -1,0 +1,103 @@
+<!-- <p>login works!</p> -->
+<div class="container shadow text-center divContainer">
+  <div class="row align-items-center justify-content-center">
+    <div class="col-4 align-self-center">
+      <div class="loginNombreApp">
+        <p>{{getTitleApp.toUpperCase()}}</p>
+        <span>| App</span>
+      </div>
+    </div>
+  </div>
+  <BR />
+
+  <form [formGroup]="form" (ngSubmit)="fn_Aceptar()">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-4 align-self-center ">
+        <mat-form-field appearance="fill">
+          <mat-label>Usuario</mat-label>
+          <input
+            formControlName="usuario"
+            matInput
+            placeholder="Usuario"
+            autocomplete="off"
+            require
+            maxlength="50"
+
+          />
+        </mat-form-field>
+        <!-- <div class="lblErrorInput">
+          @if(form.get('usuario')?.hasError('required') &&
+          form.get('usuario')?.touched){
+          <span>Campo requerido</span>
+          } @if(form.get('usuario')?.hasError('maxlength')){
+          <span>Maximo 50 caracteres</span>
+          } @if(form.get('usuario')?.hasError('pattern')){
+          <span>No se permiten caracteres especiales</span>
+          }
+        </div> -->
+      </div>
+    </div>
+    <div class="row align-items-center justify-content-center">
+      <div class="col-4 align-self-center">
+        <mat-form-field appearance="fill">
+          <mat-label>Contraseña</mat-label>
+          <input
+            formControlName="pass"
+            matInput
+            placeholder="Contraseña"
+            autocomplete="off"
+            [type]="passwordVisible ? 'text' : 'password'"   
+            require
+            maxlength="20"         
+          >
+          <button type="button" mat-icon-button matSuffix (click)="passwordVisible = !passwordVisible" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="!passwordVisible">
+          <mat-icon class="button-icon-Modal">{{passwordVisible ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        </mat-form-field>
+        <!-- <div class="lblErrorInput">
+          @if(form.get('pass')?.hasError('required') &&
+          form.get('pass')?.touched){
+          <span>Campo requerido</span>
+          } @if(form.get('pass')?.hasError('maxlength')){
+          <span>Maximo 50 caracteres</span>
+          } @if(form.get('pass')?.hasError('pattern')){
+          <span>No se permiten caracteres especiales</span>
+          }
+        </div> -->
+      </div>
+    </div>
+    <BR />
+    <div class="row align-items-center justify-content-center ">
+      <div class="col-2 align-self-center">
+        <div class="lblErrorInput">
+          <span>{{ error }}</span>
+        </div>
+      </div>
+    </div>
+    <BR />
+    <div class="row align-items-center justify-content-center">
+      <div class="col-4 align-self-center">
+        <div class="btnIconFooter">
+        <button
+          mat-raised-button
+          class="btnAceptar"
+          type="submit"
+           
+        >
+          <mat-icon>login</mat-icon>
+          Ingresar
+        </button>
+        </div>
+        <br>
+        <!-- <div class="flowAlternative">
+          <a [routerLink]="['/sua/registroAcceso']" >Registrarse</a>
+          &nbsp;|&nbsp;
+          <a [routerLink]="['/sua/cambioPassword']" >Cambiar contraseña</a>          
+        </div> -->
+      </div>
+    </div>
+    <BR />
+    <BR />
+  </form>
+</div>

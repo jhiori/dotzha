@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { DataRawPathJsonFile } from '../global.params/global.params';
+import { DataRawPathJsonFile } from '../config/global.params';
 import { DataCo } from '../interfaces/companies.interface';
 
 @Injectable({

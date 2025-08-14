@@ -5,6 +5,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { CardsComponent } from "../cards/cards.component";
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-building-page',
@@ -13,7 +14,9 @@ import { CardsComponent } from "../cards/cards.component";
     MatProgressBarModule,
     MatIconModule, // MatIconRegistry,    
     MatButtonModule,
-    CardsComponent
+    CardsComponent,
+    RouterModule
+
 ],
   // providers: [
   //   provideHttpClient(),
