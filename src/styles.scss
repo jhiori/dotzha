@@ -40,7 +40,9 @@
   --softOrange: #FF8E52;
 
   --polarWhite: #F0F8FB;
+  --polarWhite0: #d9fcfc;
   --polarWhite1: #D7F3FF;
+  
   --lavenderWhite: #F0E7F2;
   --lavenderWhite1: #F7FCFC;
 
@@ -59,6 +61,14 @@
   --otherM: #9BA2FF;
   --oth: #eadff5;
 
+  //Tatis color
+  --pink_Tatis: #FFADD3;
+  --yellow_Tatis: #FCF6BC;
+  --green_Tatis: #D0F4DE;
+  --blue_Tatis: #A9DEF9;
+  --purple_Tatis: #E4C1F9;
+  --backGUnicorn: radial-gradient(circle,rgba(255, 173, 211, 1) 0%, rgba(252, 246, 188, 1) 16%, rgba(208, 244, 222, 1) 35%, rgba(169, 222, 249, 1) 63%, rgba(228, 193, 249, 1) 100%);
+
 }
 // *{
 //   // font-family: Montserrat;
@@ -76,13 +86,16 @@ body { margin: 0; font-size: 62.5%; font-family:Montserrat,  Roboto, "Helvetica 
   // height: 120px;
   // width: 100%;
   // margin: auto;
-  display: flex;
-  align-items: center !important;
-  justify-items: center !important;  
+  // display: flex;
+  // // grid-template-columns: .5fr 1fr .5fr;
+  // align-items: center !important;
+  // justify-items: center !important;  
   padding: 10px;
-  // width: 200px;
+  // vertical-align: middle;
+  width: 200px;
   // text-align: center;
   // place-items: center;
-
-  
+ 
 }
+
+

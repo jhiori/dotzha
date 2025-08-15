@@ -5,13 +5,30 @@
         
 // }
 
+@import '../../../styles.scss';
+
+.mainDivLogin{
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: center; /* Horizontally centers the content, if needed */
+    height: 100%;   
+    width: 100%;
+    // background: #EEAECA;
+    // background: var(--backGUnicorn)
+    
+}
+
 .loginContainer{
+    // margin-top: 350px;
+    background-color: var(--mateWhite);
     padding: 10px;    
     margin: auto;
     min-width: 320px;
     width: 50%;
     max-width: 75%;  
     border-radius: 20px;
+    vertical-align: middle;
+    
     // display: flex;
    
 }
@@ -19,3 +36,186 @@
 //     display: table-cell;
 //       vertical-align: middle;
 // }
+
+///////Rainbow
+
+// $purple: rgb(255 173 211);
+// $blue: rgb(208 244 222);
+// $green: rgb(228 193 249);
+
+// $animationtime: 45s;
+// $length: 25;
+
+// body {
+// 	overflow: hidden;
+// }
+
+// .rainbow {
+// 	height: 100vh;
+// 	width: 0;
+// 	top: 0;
+// 	position: absolute;
+// 	transform: rotate(10deg);
+// 	transform-origin: top right;
+// 	@for $i from 1 through $length {
+// 		&:nth-child(#{$i}) {
+// 			$colors: 0;
+// 			$r: random(6);
+// 			@if $r == 1 {
+// 				$colors: $purple, $blue, $green;
+// 			}
+// 			@elseif $r == 2 {
+// 				$colors: $purple, $green, $blue;
+// 			}
+// 			@elseif $r == 3 {
+// 				$colors: $green, $purple, $blue;
+// 			}
+// 			@elseif $r == 4 {
+// 				$colors: $green, $blue, $purple;
+// 			}
+// 			@elseif $r == 5 {
+// 				$colors: $blue, $green, $purple;
+// 			}
+// 			@elseif $r == 6 {
+// 				$colors: $blue, $purple, $green;
+// 			}
+// 			box-shadow: -130px 0 80px 40px white, -50px 0 50px 25px nth($colors, 1),
+// 				0 0 50px 25px nth($colors, 2), 50px 0 50px 25px nth($colors, 3),
+// 				130px 0 80px 40px white;
+
+// 			animation: #{$animationtime -
+// 				$animationtime /
+// 				$length /
+// 				2 *
+// 				$i}
+// 				linear
+// 				infinite
+// 				slide;
+// 			animation-delay: -#{$i / $length * $animationtime};
+// 		}
+// 	}
+// }
+// @keyframes slide {
+// 	from {
+// 		right: -25vw;
+// 	}
+// 	to {
+// 		right: 125vw;
+// 	}
+// }
+
+// .h {
+// 	box-shadow: 0 0 50vh 40vh white;
+// 	width: 100vw;
+// 	height: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	position: absolute;
+// }
+// .v {
+// 	box-shadow: 0 0 35vw 25vw white;
+// 	width: 0;
+// 	height: 100vh;
+// 	bottom: 0;
+// 	left: 0;
+// 	position: absolute;
+// }
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--polarWhite0);
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 20vmin;
+  height: 20vmin;
+  border-radius: 50%;
+  backface-visibility: hidden;
+  animation: move linear infinite;
+}
+
+.ball:nth-child(odd) {
+    color: var(--pink_Tatis);
+}
+
+.ball:nth-child(even) {
+    color: var(--purple_Tatis);
+}
+
+/* Using a custom attribute for variability */
+.ball:nth-child(1) {
+  top: 77%;
+  left: 88%;
+  animation-duration: 40s;
+  animation-delay: -3s;
+  transform-origin: 16vw -2vh;
+  box-shadow: 40vmin 0 5.703076368487546vmin currentColor;
+}
+.ball:nth-child(2) {
+  top: 42%;
+  left: 2%;
+  animation-duration: 53s;
+  animation-delay: -29s;
+  transform-origin: -19vw 21vh;
+  box-shadow: -40vmin 0 5.17594621519026vmin currentColor;
+}
+.ball:nth-child(3) {
+  top: 28%;
+  left: 18%;
+  animation-duration: 49s;
+  animation-delay: -8s;
+  transform-origin: -22vw 3vh;
+  box-shadow: 40vmin 0 5.248179047256236vmin currentColor;
+}
+.ball:nth-child(4) {
+  top: 50%;
+  left: 79%;
+  animation-duration: 26s;
+  animation-delay: -21s;
+  transform-origin: -17vw -6vh;
+  box-shadow: 40vmin 0 5.279749632220298vmin currentColor;
+}
+.ball:nth-child(5) {
+  top: 46%;
+  left: 15%;
+  animation-duration: 36s;
+  animation-delay: -40s;
+  transform-origin: 4vw 0vh;
+  box-shadow: -40vmin 0 5.964309466052033vmin currentColor;
+}
+.ball:nth-child(6) {
+  top: 77%;
+  left: 16%;
+  animation-duration: 31s;
+  animation-delay: -10s;
+  transform-origin: 18vw 4vh;
+  box-shadow: 40vmin 0 5.178483653434181vmin currentColor;
+}
+.ball:nth-child(7) {
+  top: 22%;
+  left: 17%;
+  animation-duration: 55s;
+  animation-delay: -6s;
+  transform-origin: 1vw -23vh;
+  box-shadow: -40vmin 0 5.703026794398318vmin currentColor;
+}
+.ball:nth-child(8) {
+  top: 41%;
+  left: 47%;
+  animation-duration: 43s;
+  animation-delay: -28s;
+  transform-origin: 25vw -3vh;
+  box-shadow: 40vmin 0 5.196265905749415vmin currentColor;
+}
