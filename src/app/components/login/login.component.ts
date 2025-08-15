@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { APP_INITIALIZER, Component } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -6,18 +6,24 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { Router, RouterModule } from '@angular/router';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { UserLogin } from '../../interfaces/login.interface';
+import { UserLogin } from '../../interfaces/login.interface'; 
+import { DomSanitizer } from '@angular/platform-browser';
+import { LoadSvgIcons } from '../../config/global.functions';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @Component({
   selector: 'app-login',
-  imports: [MatButtonModule, MatFormFieldModule, MatInputModule,ReactiveFormsModule,
+  imports: [
+    MatButtonModule, MatFormFieldModule, MatInputModule,ReactiveFormsModule,
     MatIconModule,
-    RouterModule],
+    RouterModule,
+    MatDividerModule
+], 
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -32,10 +38,10 @@ private titleApp: string = 'Grupo Dotzha'
     private fb: FormBuilder,
     //private _loginService: LoginService,
     private _router: Router
-  ) {
+  ) {  
     this.form = this.fb.group({
       usuario: [
-        'usuario',
+        'User',
         [
           Validators.required,
           Validators.maxLength(50),
@@ -43,7 +49,7 @@ private titleApp: string = 'Grupo Dotzha'
         ],
       ],
       pass: [
-        'pass1',
+        'pass',
         [
           Validators.required,
           Validators.maxLength(20),

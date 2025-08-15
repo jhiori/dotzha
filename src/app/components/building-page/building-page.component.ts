@@ -1,11 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { APP_INITIALIZER, Component, inject } from '@angular/core';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { CardsComponent } from "../cards/cards.component";
-import { Router, RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router'; 
+import { LoadSvgIcons } from '../../config/global.functions';
 
 @Component({
   selector: 'app-building-page',
@@ -22,6 +23,14 @@ import { Router, RouterModule } from '@angular/router';
   //   provideHttpClient(),
   //   // ... other providers like provideAnimationsAsync()
   // ],
+  // providers:[
+  //   {
+  //     provide: APP_INITIALIZER,
+  //     useFactory: (iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) => () => LoadSvgIcons(iconRegistry, sanitizer),
+  //     deps: [MatIconRegistry, DomSanitizer],
+  //     multi: true
+  //   }
+  // ],
   templateUrl: './building-page.component.html',
   styleUrl: './building-page.component.scss'
 })
@@ -34,9 +43,10 @@ import { Router, RouterModule } from '@angular/router';
 // };
 export class BuildingPageComponent {
   
-  constructor( private matIconRegistry: MatIconRegistry, private domSanitizer: DomSanitizer ) {  
-    this.matIconRegistry.addSvgIcon('dotzha-name',
-      // this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_lg_wp.svg')); 
-      this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_wp.svg')); 
+  constructor( ) {  
+    // this.matIconRegistry.addSvgIcon('dotzha-name',
+    //   // this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_lg_wp.svg')); 
+    //   this.domSanitizer.bypassSecurityTrustResourceUrl('/building-maintenance/DG_wp.svg')); 
+    
   }
 }

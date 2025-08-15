@@ -1,15 +1,16 @@
 import { Routes } from '@angular/router';
 import { BuildingPageComponent } from './components/building-page/building-page.component';
 import { LoginComponent } from './components/login/login.component';
+import { RoutesPath } from './config/global.params';
 
 export const routes: Routes = [
     {
         // path: paramRutas.CONTEXTO,
-        path: 'dotzha',
+        path: RoutesPath.CONTEXT_CO,
         component: BuildingPageComponent
     },
     {
-        path: 'dotzha/login',
+        path: RoutesPath.CONTEXT_CO+RoutesPath.LOGIN_CO,
         component: LoginComponent
     },
     {
