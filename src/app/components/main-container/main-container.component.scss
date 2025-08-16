@@ -1,0 +1,27 @@
+mat-drawer-container{
+    height: calc( 100vh - 60px - 54px);
+    /* height: 100%; */
+    font-family: 'Geomanist' !important;
+  
+}
+
+.sideMenu {
+    color: var(--gray_soft);
+    /* height: 100%; */
+    top: 10px;
+    bottom: 10px;
+
+}
+
+.profileUser{
+    padding-top: 24px;
+    text-align: center;
+    color: var(--mate_black);
+    img {
+        
+        border-radius: 100%;
+        object-fit: cover;
+        width: 100px;
+        height: 100px ;
+    }
+}

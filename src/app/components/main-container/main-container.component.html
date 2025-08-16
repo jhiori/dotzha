@@ -1,0 +1,17 @@
+<app-header class="app-header"></app-header>
+<app-toolbar (notify)="fn_ToggleDrawer($event);"></app-toolbar>
+<mat-drawer-container >
+    <mat-drawer #drawer mode="over" class="sideMenu">
+        <div class="profileUser">
+                <img src="/svg/profile/account_circle_.svg" alt="Profile Icon">
+                <div>
+                    <h2>{{usuarioInfo.nameUser!}}</h2>
+                    <p>{{usuarioInfo.userDesc!}}</p>
+                </div>
+            </div>
+        <!-- <app-menu-desplegable/> -->
+    </mat-drawer> 
+    <mat-drawer-content> 
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

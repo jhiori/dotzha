@@ -1,0 +1,5 @@
+<mat-nav-list>
+    @for (menuItem of opcionesMenu(); track menuItem.categoria){
+        <app-menu-desplegable-expand [item]="menuItem" [routeHistory]="menuItem.rutaCategoria ||''"/>
+    }
+</mat-nav-list>

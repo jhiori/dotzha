@@ -1,8 +1,8 @@
 export interface UserLogin {
-    idUsuario?: number;
-    usuario?: string;
-    nombreUsuario?: string;
+    idUser?: number;
+    user?: string;
+    nameUser?: string;
     pass?: string;
     token?: string;
-    activoUsuario?: number;
+    activeUser?: number;
 }

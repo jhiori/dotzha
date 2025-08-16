@@ -1,0 +1,26 @@
+<a mat-list-item  (click)="toogleNested()" > 
+    <mat-icon matListItemIcon>{{item().iconCategoria}}</mat-icon>
+    <span matListItemTitle>{{item().categoria}}</span>                   
+    
+    @if(this.item().desplegable!.length > 0 || this.item().desplegable == undefined){
+        <span matListItemMeta>                   
+        @if(nestedMenuOpen()){
+            <mat-icon>expand_less</mat-icon>                            
+        }@else {
+            <mat-icon>expand_more</mat-icon>                            
+        }                                
+        </span>
+    }
+    </a>
+@if(item().desplegable && nestedMenuOpen()){
+    <div @expandContractMenu>
+        @for (subMenuItem of item().desplegable; track subMenuItem.etiquetaMenu){
+            <div class="desplegable">
+            <a mat-list-item class="indented" [routerLink]="routeHistory() + subMenuItem.rutaMenu" >
+                <mat-icon matListItemIcon>{{subMenuItem.iconMenu}}</mat-icon>
+                <span matListItemTitle>{{subMenuItem.etiquetaMenu}}</span>                                                                                                                            
+            </a>
+            </div>
+        }
+    </div> 
+}

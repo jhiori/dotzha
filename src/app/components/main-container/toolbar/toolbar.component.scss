@@ -1,0 +1,37 @@
+@import '../../../../styles.scss';
+
+mat-toolbar {
+  // padding: 2px 10px 5px 0;
+  margin: 0;
+  /* width: auto;
+  height: 54px; */
+}
+
+/* mat-toolbar img {
+  width: 13rem;
+}*/
+
+ mat-toolbar p {
+  
+  margin: 5px;
+  font-size: 2.5rem;
+}
+
+/* mat-toolbar {
+  position: relative;
+  z-index: 5;
+} */
+
+.divBtnMenu button{
+  color: var(--darkPurple0);
+  /* background-color: var(--divContainerColor); */
+}
+
+.loginNombreApp{
+  display: grid;
+  grid-template-columns: .7fr .3fr;
+}
+
+.loginNombreApp p, span{
+  font-family: 'Montserrat';
+}

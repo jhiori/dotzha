@@ -1,0 +1,26 @@
+<mat-toolbar class="shadow">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-3 align-self-end text-center">
+        <div class="btnIconTable"> 
+       <!--   </div> -->
+        <!-- <div class="divBtnMenu">           -->
+          <button mat-icon-button (click)="fn_OpenClose_Drawer()">          
+            <mat-icon matTooltip="Menu" matTooltipPosition="before"
+              >menu
+            </mat-icon>
+          </button>
+        </div>
+      </div>
+      <div class="col-9 align-self-end ">
+         <!--  -->
+        <div class="loginNombreApp">
+                   
+          <p class="text-end">{{ getTitleApp }}</p>
+          <span>| App</span>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-toolbar>

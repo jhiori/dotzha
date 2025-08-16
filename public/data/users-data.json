@@ -1,0 +1,28 @@
+{
+    "success":true,
+    "msg":"Data ok",
+    "data": [{
+        "idUser":"1",
+        "nameUser":"SAS",
+        "fullNameUser":"",
+        "user":"sas",
+        "pass":"sas",
+        "userDesc":""
+    },
+    {
+        "idUser":"1",
+        "nameUser":"Jhiori",
+        "fullNameUser":"",
+        "user":"jhiori",
+        "pass":"jhiori",
+        "userDesc":"Usuario de Jhio Tellez"
+    },
+    {
+        "idUser":"2",
+        "nameUser":"Lu",
+        "fullNameUser":"",
+        "user":"lu",
+        "pass":"lu",
+        "userDesc":"Usuario de Lulu Flores"
+    }]
+}

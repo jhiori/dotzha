@@ -2,12 +2,23 @@ import { Routes } from '@angular/router';
 import { BuildingPageComponent } from './components/building-page/building-page.component';
 import { LoginComponent } from './components/login/login.component';
 import { RoutesPath } from './config/global.params';
+import { MainContainerComponent } from './components/main-container/main-container.component';
 
 export const routes: Routes = [
+    // {
+    //     // path: paramRutas.CONTEXTO,
+    //     path: RoutesPath.CONTEXT_CO,
+    //     component: BuildingPageComponent
+    // },
     {
-        // path: paramRutas.CONTEXTO,
         path: RoutesPath.CONTEXT_CO,
-        component: BuildingPageComponent
+        component: MainContainerComponent,
+        // children: [
+        //     {
+        //         //path: RoutesPath.VENTAS_MODULE_CO
+
+        //     }
+        // ]
     },
     {
         path: RoutesPath.CONTEXT_CO+RoutesPath.LOGIN_CO,
@@ -16,6 +27,10 @@ export const routes: Routes = [
     {
         // path: paramRutas.CONTEXTO,
         path: '',
+        component: BuildingPageComponent
+    },
+    { 
+        path: '**',
         component: BuildingPageComponent
     },
     /*Ejemplo con children */

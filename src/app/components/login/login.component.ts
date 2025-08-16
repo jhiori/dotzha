@@ -14,6 +14,9 @@ import { UserLogin } from '../../interfaces/login.interface';
 import { DomSanitizer } from '@angular/platform-browser';
 import { LoadSvgIcons } from '../../config/global.functions';
 import { MatDividerModule } from '@angular/material/divider';
+import { LoginService } from '../../services/login.service';
+import { response } from '../../interfaces/response.interface';
+import { RoutesPath } from '../../config/global.params';
 
 
 @Component({
@@ -36,12 +39,12 @@ private titleApp: string = 'Grupo Dotzha'
 
   constructor(
     private fb: FormBuilder,
-    //private _loginService: LoginService,
+    private _loginService: LoginService,
     private _router: Router
   ) {  
     this.form = this.fb.group({
       usuario: [
-        'User',
+        'Sas',
         [
           Validators.required,
           Validators.maxLength(50),
@@ -64,30 +67,41 @@ private titleApp: string = 'Grupo Dotzha'
     console.log('Entra LoginComponent')
   }
 
-    fn_Aceptar() {
-    if (this.form.invalid) {
+  logIn_() {
+    if (this.form.invalid) 
       return;
-    }
+    
 
     const userLogin: UserLogin = {
-      usuario: this.form.value.usuario,
+      user: this.form.value.usuario,
       pass: this.form.value.pass
     }
 
-    //let respSrv!: RespSrv;
+    let resp!: response;
 
-    // this._loginService.getAutenticacion(userLogin).subscribe((resp) => {
-    //   respSrv = resp;
-    //   console.log(resp)
-    //   if (respSrv.success) {
-    //     //console.log(paramRutas.CONTEXTO + "/" + paramRutas.APP_MENU)
-    //     this._router.navigate([paramRutas.CONTEXTO + "/" + paramRutas.APP_MENU]);
+    this._loginService.getAutenticacion(userLogin).subscribe((resp_) => {
+      resp = resp_;
+      console.log(resp)
+      if (resp.success) {
+        //console.log(paramRutas.CONTEXTO + "/" + paramRutas.APP_MENU)
+        console.log(resp)
+        if(this.validateUser(userLogin, resp_))
+          this._router.navigate([RoutesPath.CONTEXT_CO]);
+        else
+          this.error = 'Credenciales incorrectas, verificar'
         
-    //     // this._router.navigate([paramRutas.CONTEXTO + "/" + paramRutas.CAT_NIVEL]);
-    //   } else {
-    //     this.error = respSrv.message.msg;
-    //   }
-    // });
+        // this._router.navigate([paramRutas.CONTEXTO + "/" + paramRutas.CAT_NIVEL]);
+      } else //{
+        // this.error = resp.msg;
+        this.error = 'No se encontro información'
+      // }
+    });
+  }
+
+  validateUser(user: UserLogin,resp:any):boolean{
+    //let userValidate: boolean = false
+    console.log('filter: ', resp.data.filter((d:any) => d.pass === user.pass).length)
+    return resp.data.filter((d:any) => d.pass === user.pass).length > 0 ? true : false
   }
 
    get getTitleApp(){
