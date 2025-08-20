@@ -25,6 +25,10 @@ export class LoginService {
     return this.http.get<response>(this.myAppUrl);
   }
 
+  // getUserInfo(user: UserLogin): Observable<response>{
+  //   return this.http.get<response>(this.myAppUrl)
+  // }
+
   // getAutenticacion(userLogin: UserLogin): Observable<response> {
   //   return this.http.post<response>(
   //     `${this.myAppUrl}${this.loginUrl}`,

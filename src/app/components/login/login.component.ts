@@ -100,7 +100,7 @@ private titleApp: string = 'Grupo Dotzha'
 
   validateUser(user: UserLogin,resp:any):boolean{
     //let userValidate: boolean = false
-    console.log('filter: ', resp.data.filter((d:any) => d.pass === user.pass).length)
+    //console.log('filter: ', resp.data.filter((d:any) => d.pass === user.pass).length)
     return resp.data.filter((d:any) => d.pass === user.pass).length > 0 ? true : false
   }
 

@@ -13,7 +13,7 @@ import { HeaderComponent } from '../header/header.component';
 @Component({
   selector: 'app-main-container',
   imports: [HeaderComponent,
-    ToolbarComponent,MatSidenavModule,RouterOutlet, /*MenuDesplegableComponent*/],
+    ToolbarComponent,MatSidenavModule,RouterOutlet, MenuDesplegableComponent],
   templateUrl: './main-container.component.html',
   styleUrl: './main-container.component.scss'
 })
@@ -34,7 +34,7 @@ export class MainContainerComponent {
 
   constructor(
     // private _loginService: LoginService,
-    // private _usuarioService: UsuarioService,
+    private _usuarioService: UsuarioService,
   ){
 
   }
@@ -64,10 +64,17 @@ export class MainContainerComponent {
 
   // }
 
-  getUsuarioInfo(){
-    
+  ngOnInit(){
+    console.log('Get user data')
+    this.getUsuarioInfo()
   }
 
-
+  getUsuarioInfo(){
+    this._usuarioService.getUsuarioInfoById(this.usuarioInfo.idUser).subscribe(resp=>{
+      //console.log('User data', resp)
+      if(resp.success)
+        this.usuarioInfo = resp.data.filter((u:any) => u.idUser === this.usuarioInfo.idUser)
+    })
+  }
   
 }

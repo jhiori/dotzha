@@ -1,8 +1,8 @@
 <a mat-list-item  (click)="toogleNested()" > 
-    <mat-icon matListItemIcon>{{item().iconCategoria}}</mat-icon>
-    <span matListItemTitle>{{item().categoria}}</span>                   
+    <mat-icon matListItemIcon>{{item().iconOption}}</mat-icon>
+    <span matListItemTitle>{{item().option}}</span>                   
     
-    @if(this.item().desplegable!.length > 0 || this.item().desplegable == undefined){
+    @if(this.item().desplegableValues!.length > 0 || this.item().desplegable == undefined){
         <span matListItemMeta>                   
         @if(nestedMenuOpen()){
             <mat-icon>expand_less</mat-icon>                            
@@ -14,7 +14,7 @@
     </a>
 @if(item().desplegable && nestedMenuOpen()){
     <div @expandContractMenu>
-        @for (subMenuItem of item().desplegable; track subMenuItem.etiquetaMenu){
+        @for (subMenuItem of item().desplegableValues; track subMenuItem.etiquetaMenu){
             <div class="desplegable">
             <a mat-list-item class="indented" [routerLink]="routeHistory() + subMenuItem.rutaMenu" >
                 <mat-icon matListItemIcon>{{subMenuItem.iconMenu}}</mat-icon>

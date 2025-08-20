@@ -5,7 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 // import { MenuItem } from '../../../core/interfaces/models';
 import { animate, style, transition, trigger } from '@angular/animations';
 // import { LoginService } from '../../../core/services/login.service';
-import { MenuCategoria } from '../../../../interfaces/menu.interface';
+import { MenuOption } from '../../../../interfaces/menu.interface';
 import { RoutesPath } from '../../../../config/global.params';
 // import { paramRutas } from '../../../../../config/parametros.constantes';
 
@@ -28,7 +28,7 @@ import { RoutesPath } from '../../../../config/global.params';
 })
 export class MenuDesplegableExpandComponent implements AfterViewInit{
 
-  item = input.required<MenuCategoria>()
+  item = input.required<MenuOption>()
  
   nestedMenuOpen = signal(false)
   routeHistory = input('')
@@ -40,8 +40,8 @@ export class MenuDesplegableExpandComponent implements AfterViewInit{
   }
 
   toogleNested(){
-    if (this.item().desplegable!.length == 0 || this.item().desplegable == undefined){
-      this._router.navigate([RoutesPath.CONTEXT_CO + "/" + this.item().rutaCategoria]);
+    if (this.item().desplegableValues!.length == 0 || this.item().desplegable == undefined){
+      this._router.navigate([RoutesPath.CONTEXT_CO + "/" + this.item().rutaOption]);
       // return;
     }else{
       this.nestedMenuOpen.set(!this.nestedMenuOpen());

@@ -1,0 +1,21 @@
+{
+    "success":true,
+    "msg":"Data ok",
+    "data": [{
+        "option": "",
+        "ordenOption": "",
+        "iconOption": "",
+        "rutaOption": "",
+        "desplegable": false,
+        "desplegableValues": []
+    }, 
+    {
+        "option": "Salir",
+        "ordenOption": "-1",
+        "iconOption": "output",
+        "rutaOption": "/home",
+        "desplegable": false,
+        "desplegableValues": []
+        }
+    ]
+}

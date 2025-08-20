@@ -9,12 +9,13 @@
 //     subItems?: MenuItem[]
 // }
 
-export interface MenuCategoria {
-    categoria?: string;
-    ordenCategoria?: number;
-    iconCategoria?: string;
-    rutaCategoria?: string;
-    desplegable?: MenuDesplegable[];
+export interface MenuOption {
+    option?: string;
+    ordenOption?: number;
+    iconOption?: string;
+    rutaOption?: string;
+    desplegable?: boolean;
+    desplegableValues?: MenuDesplegable[];
 }
 
 export interface MenuDesplegable {

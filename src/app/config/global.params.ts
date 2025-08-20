@@ -1,6 +1,7 @@
 export const DataRawPathJsonFile = {
     DATA_FILE_CO: '/data/companies-data.json',
-    DATA_FILE_USER: '/data/users-data.json'
+    DATA_FILE_USER: '/data/users-data.json',
+    DATA_FILE_MENU: '/data/menu-options-data.json'
 }
 
 export const RoutesPath = {

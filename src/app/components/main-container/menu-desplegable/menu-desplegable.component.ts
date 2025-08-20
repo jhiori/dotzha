@@ -7,8 +7,9 @@ import { firstValueFrom } from 'rxjs';
 import { UserLogin } from '../../../interfaces/login.interface';
 // import { RespSrv } from '../../../interfaces/response.interface';
 // import { LoginService } from '../../../services/login.service';
-import { MenuCategoria, MenuDesplegable } from '../../../interfaces/menu.interface';
+import { MenuOption, MenuDesplegable } from '../../../interfaces/menu.interface';
 import { MenuDesplegableExpandComponent } from "./menu-desplegable-expand/menu-desplegable-expand.component";
+import { MenuService } from '../../../services/menu.service';
 // import { CategoriaVista } from '../../../interfaces/categoria-vista.interface';
 // import { CategoriaVistaService } from '../../../services/categoria-vista.service';
 
@@ -18,24 +19,27 @@ import { MenuDesplegableExpandComponent } from "./menu-desplegable-expand/menu-d
   templateUrl: './menu-desplegable.component.html',
   styleUrl: './menu-desplegable.component.scss'
 })
-export class MenuDesplegableComponent implements OnInit {
+export class MenuDesplegableComponent {
 
 
   usuarioLogin!: UserLogin;
   // respSrvPerfil!: RespSrv;
 
-  opcionesMenu =  signal<MenuCategoria[]>([]);
+  opcionesMenu =  signal<MenuOption[]>([]);
 
   constructor(
     // private _categoriaVistaService: CategoriaVistaService,
     // private _loginService: LoginService,
+    private _menuOptions: MenuService
   ){
     // this.validaPermiso();
     // this.obtenerDatos();
 
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    console.log('Entra menu ')
+    this.obtenerDatosMenu()
   }
 
   // async validaPermiso(){
@@ -53,7 +57,8 @@ export class MenuDesplegableComponent implements OnInit {
   //   }
   // }
   
-  async obtenerDatos(){
+  // async obtenerDatos(){
+  obtenerDatosMenu(){
     // const respSrv = await firstValueFrom(this._categoriaVistaService.getMenuLateral(this.usuarioLogin.idUsuario!));
     // if(respSrv.success){
     //   // console.log(respSrv.data);
@@ -61,6 +66,10 @@ export class MenuDesplegableComponent implements OnInit {
     // } else {
       
     // }
-
+    this._menuOptions.getMenuOptions().subscribe(resp => {
+      console.log('Menu options', resp)
+      if(resp.success)
+        this.opcionesMenu.set(resp.data)
+    })
   }
 }
