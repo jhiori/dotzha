@@ -46,7 +46,7 @@ export class MenuDesplegableExpandComponent implements AfterViewInit{
     }else{
       this.nestedMenuOpen.set(!this.nestedMenuOpen());
     }
-  }
+  } 
 
 
 }
